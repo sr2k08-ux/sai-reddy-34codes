@@ -10,7 +10,6 @@ n = int(input("Enter the number: "))
 print(f"{n} is {'abundant' if is_abundant(n) else 'not abundant'}")
 
 CODE:2
-
 def aliquot_sum(n):
     sum_divisors = 0
     for i in range(1, n):
@@ -22,7 +21,6 @@ n = int(input("Enter the number: "))
 print(f"Aliquot sum of {n} is {aliquot_sum(n)}")
 
 CODE:3
-
 def aliquot_sum(n: int) -> int:
     if n < 1:
         raise ValueError("Input must be a positive integer.")
